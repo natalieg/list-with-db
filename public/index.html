@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>Do Me</title>
+  <link rel="stylesheet" href="/stylesheets/style.scss">
+
+</head>
+
+<body>
+  <div class="content">
+
+    <div class="box">
+      <div>
+        <p id="timeNow"></p>
+        <p id="tasksInfo"> 
+          <span id="sumTask"></span>
+          <span id="sumTime"></span>
+          <span id="timeFin"></span>
+        </p>
+      </div>
+
+      <table>
+        <thead>
+          <th colspan="5">
+            <h3>TODO LIST</h3>
+          </th>
+        </thead>
+        <thead id="tableHead"></thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <span id="placeHolderButtonDelete"></span>
+
+    </div>
+
+    <form class="addChara" action="/api/post" method="post">
+      <h3>Add ToDo</h3>
+      <label>ID</label> <input id='inputID' type="number" name="id"><br>
+      <label>Task</label> <input autocomplete="off" type="text" name="task"><br>
+      <label>Time</label> <input autocomplete="off" type="number" name="time"><br>
+
+      <input class="button" type="submit" value="Submit">
+    </form>
+
+
+  </div>
+  <script src="javascripts/moment.js"></script>
+  <script src="javascripts/dataController.js"></script>
+</body>
+
+</html>

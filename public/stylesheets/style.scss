@@ -1,0 +1,145 @@
+body {
+  background-color: rgb(200, 200, 226);
+  background-image: url('../images/mountain.jpeg');
+  background-size: cover;
+  background-position: bottom center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+.content {
+  // width: 60%;
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  //flex-wrap: wrap;
+  align-content: center;
+}
+
+.box,
+form,
+table {
+  background-color: rgba(255, 255, 255, 0.705);
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  width: 100%;
+  max-height: 380px;
+}
+
+form input {
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  text-align: center;
+}
+
+form img {
+  width: 80%;
+}
+
+form label {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button {
+  margin-top: 15px;
+  background-color: #17a2b8;
+  border: 1px solid #17a2b8;
+  color: white;
+  padding: 10px;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #b48088;
+  border: 1px solid #824c55;
+ 
+}
+
+h3 {
+  margin-top: 0;
+}
+
+table {
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  min-width: 600px;
+  text-align: center;
+  border-spacing: 1px;
+}
+
+table h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+}
+
+table th {
+  background-color: #17a2b8;
+  // border-radius: 5px;
+  color: white;
+  font-weight: 100;
+  font-size: 1.2em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+table th:first-child {
+  border-top-left-radius: 5px;
+}
+
+table th:last-child {
+  border-top-right-radius: 5px;
+}
+
+table tr {
+  transition: background-color .5s;
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgb(119, 119, 119);
+}
+
+table tr:hover {
+  background-color: #b48088;
+  color: white;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+table td {
+  padding: 5px;
+  max-width: 50px;
+}
+
+tr:nth-child(even) {background: #538a734f}
+
+table th, table tr {
+  padding: 0;
+}
