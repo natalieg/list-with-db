@@ -7,15 +7,21 @@
       "finished": false
     },
     {
-      "id": 7,
-      "task": "für anu",
-      "time": 15,
+      "id": 13,
+      "task": "Hello",
+      "time": 23,
       "finished": false
     },
     {
-      "id": 8,
-      "task": "fertig für anu",
-      "time": 20,
+      "id": 14,
+      "task": "asdfasdf",
+      "time": 123,
+      "finished": false
+    },
+    {
+      "id": 15,
+      "task": "small task",
+      "time": 5,
       "finished": false
     }
   ]

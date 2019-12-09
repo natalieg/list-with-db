@@ -1,4 +1,14 @@
-// ?? How to import moment.js into this
+    // #TODO Refresh automatically every second
+    // ### This should't be here
+
+    let timeNowSpan = document.getElementById('timeNow');
+    let timeNow = moment().format('LTS');
+    timeNowSpan.innerHTML = `${timeNow}`;
+
+    setInterval(() => {
+        timeNow = moment().format('LTS');
+        timeNowSpan.innerHTML = `${timeNow}`;
+    }, 1000);
 
 // Obtain Data from Database
 function obtain_data() {
@@ -22,12 +32,6 @@ function suggest_id(data){
 // Create dynamic Table function
 // And other stuff
 function create_table(data) {
-
-    // #TODO Refresh automatically every second
-    // ### This should't be here
-    let timeNow = moment().format('LT');
-    let timeNowSpan = document.getElementById('timeNow');
-    timeNowSpan.innerHTML = `${timeNow}`;
 
     let thead = document.getElementById('tableHead');
     let headerContent = '';
